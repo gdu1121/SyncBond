@@ -39,12 +39,12 @@
                 /*Sets the text color to white*/
                 color: white;
             }
-            /*Create a heading for the navigation bar*/
+            /*Stylizes the main heading in the navigation bar*/
             nav h1{
                 /*Sets the font size of the heading to 28 pixels*/
                 font-size: 28px;
             }
-            /*Create a list for the navigation menu*/
+            /*Stylizes the navigation menu*/
             nav ul{
                 /*Removes default list styling*/
                 list-style: none;
@@ -53,7 +53,7 @@
                 /*20px of space between each menu item*/
                 gap: 20px;
             }
-            /*Create a link for each menu item*/
+            /*Stylizes the links in the navigation menu*/
             nav a{
                 /*Removes underline from links*/
                 text-decoration: none;
@@ -61,7 +61,55 @@
                 color: white;
                 font-weight: bold;
             }
+            /*Stylizes the hero section*/
+            .hero{
+                /*Sets the height of the hero section to 100% of the viewport height*/
+                min-height: 100vh;
+                /*Adds padding to the bottom of the hero section*/
+                padding-bottom: 200px;
+                /*Centers content both horizontally and vertically*/
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                /*Centers text within the hero section*/
+                text-align:center;
+                /*Background of the hero section*/
+                background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+                url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2");
+                /*Ensures the background image covers the entire hero section*/
+                background-size:cover;
+                /*Sets the text color to white*/
+                color:white;
+            }
+            /*Stylizes the main heading in the hero section*/
+            .hero h2{
+                font-size:48px;
+                margin-bottom:20px;
+            }
+            /*Stylizes the paragraph in the hero section*/
+            .hero p{
+                font-size:20px;
+                margin-bottom:30px;
+            }
+            /*Stylizes the sign-up section*/
+            .signup input{
+                width: 300px;
+                padding: 10px;
+                margin: auto;
+            }
+            /*Stylizes the sign-up button*/
+            .signup button{
+                width: 300px;
+                padding: 12px;
+                background:#ff4d6d;
+                border: none;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        
         </style>
+    
     </head>
     <body>
         <!--Navigation Bar-->
@@ -69,11 +117,36 @@
             <h1>SyncBond</h1>
         <!-- Unordered List -->
         <ul>
+            <!-- Navigation Links with href attributes (hyperlinks)-->
             <li><a href="#">Home</a></li>
             <li><a href="#">Matches</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Login</a></li>
         </ul>
         </nav>
+
+        <!-- Hero Section -->
+        <section class = "hero">
+
+            <div>
+                <!-- Main Heading -->
+                <h1>Connected By What You Love.</h1>
+                <!-- Subheading -->
+                <p>Meet new people, discover shared interests, and figure out what to do next.</p>
+            </div>
+        </section>
+
+        <!-- Sign Up -->
+         <div class = "signup">
+            <!-- Create Account Heading -->
+            <h3>Create Account</h3>
+            <!-- Input fields for name, email, and password -->
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <!-- Sign Up Button -->
+            <button>Join Now</button>
+         </div>
+        
     </body>
 </html>
