@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Allows for Emojis, symbols, and other Unicode characters -->
+        <meta charset="UTF-8">
+        <!-- Ensures proper rendering on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the webpage -->
+        <title>SyncBond</title>
+
+        <!-- CSS Styles -->
+        <style>
+        /* Asterisk means all elements on the page */
+            *{
+                /*Removes default spacing outside of elements*/
+                margin: 0;
+                /*Removes spacing inside of elements*/
+                padding: 0;
+                box-sizing: border-box;
+                /*Sets the default text font*/
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /*Produces a white background*/
+            body{
+                background:#f5f5f5;
+            }
+            /*Create a Navigation Bar*/
+            nav{
+                /*Turns the nav element into a flex container, allowing for easier arrangement*/
+                display: flex;
+                /*Pushes elements to opposite ends*/
+                justify-content: space-between;
+                /*Centers items vertically*/
+                align-items: center;
+                /*Adds padding around the navigation bar. 20px on top and bottom, 50px on left and right*/
+                padding: 20px 50px;
+                /*Makes the navigation bar have a pink background*/
+                background:#ff4d6d;
+                /*Sets the text color to white*/
+                color: white;
+            }
+            /*Create a heading for the navigation bar*/
+            nav h1{
+                /*Sets the font size of the heading to 28 pixels*/
+                font-size: 28px;
+            }
+            /*Create a list for the navigation menu*/
+            nav ul{
+                /*Removes default list styling*/
+                list-style: none;
+                /*Makes menu items display horizontally*/
+                display: flex;
+                /*20px of space between each menu item*/
+                gap: 20px;
+            }
+            /*Create a link for each menu item*/
+            nav a{
+                /*Removes underline from links*/
+                text-decoration: none;
+                /*White text and bold letters*/
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <h1>SyncBond</h1>
+        <!-- Unordered List -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        </nav>
+    </body>
+</html>
